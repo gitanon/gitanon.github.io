@@ -1,0 +1,10 @@
+.wrapper {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.maketimage {
+  float: left;
+  margin: 0 50px 0 0;
+  width: 300px;
+}
