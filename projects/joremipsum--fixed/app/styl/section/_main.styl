@@ -1,0 +1,37 @@
+.main
+  background primaryColor
+  height 280px
+  clearfix()
+
+  &__title
+    color secondaryColor2
+    font fontBold 24px/1 fontArray
+    margin 60px auto 0
+    text-align center
+
+  &__description
+    color secondaryColor2
+    font fontLight 20px/1 fontArray
+    margin 20px auto 0
+    text-align center
+
+  &__btn
+    background secondaryColor1
+    border-radius 5px
+    color primaryColor
+    font fontHeavy 20px/1 fontArray
+    margin 0 10px
+    padding 10px 20px
+    text-decoration none
+
+  &__outer
+    text-align center
+    height 100px
+    &:before
+      content ''
+      display inline-block
+      height 100%
+      vertical-align middle
+  &__inner
+    display inline-block
+    vertical-align middle
