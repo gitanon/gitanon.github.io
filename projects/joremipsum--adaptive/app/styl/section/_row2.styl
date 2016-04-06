@@ -1,0 +1,85 @@
+.row2
+  background secondaryColor1
+  clearfix()
+
+  &__icon
+    display none
+    margin 0
+    float left
+    position relative
+
+    &--phone
+      left 115px
+      position absolute
+      top 15px
+      width 50px
+      z-index 1
+
+    &--tablet
+      left 30px
+      position absolute
+      width 94px
+      z-index 2
+
+  &__title
+    color secondaryColor2
+    font fontBold (24/fontSize)rem/1 fontArray
+    margin 30px 30px 30px 30px
+
+  &__caption
+    color secondaryColor2
+    font fontLight (20/fontSize)rem/1 fontArray
+    margin 2px 0 0 30px
+    padding 0 20px 0 0
+
+  &__description
+    color primaryColor
+    font fontNormal (15/fontSize)rem/22px fontArray
+    margin 20px 0 0 30px
+    padding 0 30px 0 0
+
+  &__btn
+    background secondaryColor2
+    border-radius 5px
+    color secondaryColor1
+    display inline-block
+    font fontBold (16/fontSize)rem/1 fontArray
+    margin 30px 0 60px 30px
+    padding 13px 13px 10px
+    text-decoration none
+
+@media screen and (min-width: 768px)
+  .row2
+    &__icon
+      display block
+      margin 0 60px 0 0
+      float left
+      position relative
+
+      &--phone
+        left 230px
+        position absolute
+        top 30px
+        width 101px
+        z-index 1
+
+      &--tablet
+        left 60px
+        position absolute
+        width 189px
+        z-index 2
+
+    &__title
+      margin 60px 0 0 390px
+
+    &__caption
+      margin 2px 0 0 390px
+
+    &__description
+      margin 20px 0 0 390px
+      padding 0 60px 0 0
+
+    &__btn
+      display inline-block
+      margin 30px 0 60px 390px
+      padding 13px 13px 10px

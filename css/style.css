@@ -3,6 +3,15 @@
   width: 800px;
 }
 
+.maket:after,
+.maket:before {
+  content: "";
+  display: table;
+}
+.maket:after {
+  clear: both;
+}
+
 .maketimage {
   float: left;
   margin: 0 50px 0 0;

@@ -1,0 +1,33 @@
+div.row3
+  div.wrapper
+    div.row3__title Bulum nulla necante
+    div.row3__caption Cestibulum auctor dapibus neque lobor
+    div.row3__description Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam am dui mi,<br> tincidunt quis, accumsan porttitor, facilisis bi in sem quis dui placerat ornare.
+    div.row3__slider
+      //- Slider Setup
+      input(checked type="radio" name="slider" id="slide1")
+      input(type="radio" name="slider" id="slide2")
+      input(type="radio" name="slider" id="slide3")
+      
+      //- The Slider
+      div#slides
+
+        div#overflow
+        
+          div.inner
+          
+            article
+              img(src="images/pc.png")
+
+            article
+              img(src="images/tablet.png")
+            
+            article
+              img(src="images/phone.png")
+        
+      //- Controls and Active Slide Display 
+    
+      div#controls
+        label(for="slide1")
+        label(for="slide2")
+        label(for="slide3")

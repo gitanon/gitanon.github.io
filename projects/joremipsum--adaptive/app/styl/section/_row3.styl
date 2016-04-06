@@ -1,0 +1,169 @@
+.row3
+  background secondaryColor2
+
+  &__title
+    color secondaryColor1
+    font fontBold (24/fontSize)rem/1 fontArray
+    margin 30px auto 0
+    text-align center
+
+  &__caption
+    color primaryColor
+    font fontLight (20/fontSize)rem/1 fontArray
+    margin 2px 0 0 0
+    text-align center
+
+  &__description
+    color #978489
+    font fontLight (20/fontSize)rem/1 fontArray
+    margin 20px auto 0
+    padding 0 20px
+    text-align center
+
+  &__slider
+    display none
+    margin 35px auto 60px
+    width 417px
+
+@media screen and (min-width: 480px)
+  .row3
+    &__slider
+      display block
+
+  // Slider Setup
+
+  input
+    display none
+
+  #slide1:checked ~ #slides .inner
+    margin-left 0
+  #slide2:checked ~ #slides .inner
+    margin-left -417px
+  #slide3:checked ~ #slides .inner
+    margin-left -834px
+
+  #overflow
+    margin 0 auto
+    width 100%
+    overflow hidden
+
+  #slides .inner
+    width 500%
+    line-height 0
+
+  #slides article
+    float left
+    width 20%
+    text-align center
+    height 278px
+    &:before
+      content ''
+      display inline-block
+      height 100%
+      vertical-align middle
+
+  article img
+    margin 0 auto
+    display inline-block
+    vertical-align middle
+
+  // Slider Styling
+
+  // Control Setup
+
+  #controls
+    margin -150px 0 0 0
+    width 100%
+    height 0px
+
+  #controls label
+    display none
+    width 32px
+    height 32px
+
+  #controls label:hover
+    cursor pointer
+
+  #slide1:checked ~ #controls label:nth-child(2),
+  #slide2:checked ~ #controls label:nth-child(3),
+  #slide3:checked ~ #controls label:nth-child(1)
+    background url('../images/arrow-right.png') no-repeat
+    float right
+    margin 0 0 0 0
+    display block
+
+
+  #slide1:checked ~ #controls label:nth-child(3),
+  #slide2:checked ~ #controls label:nth-child(1),
+  #slide3:checked ~ #controls label:nth-child(2)
+    background url('../images/arrow-left.png') no-repeat
+    float left
+    margin 0 0 0 0
+    display block
+
+  #slide1:checked ~ #active label:nth-child(1),
+  #slide2:checked ~ #active label:nth-child(2),
+  #slide3:checked ~ #active label:nth-child(3)
+    background #333
+    border-color #333 !important
+
+  // Animation
+
+  #slides .inner
+    transition all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000) // easeInOutQuart
+    transition-timing-function cubic-bezier(0.770, 0.000, 0.175, 1.000) // easeInOutQuart
+
+  #slider
+    transition all 0.5s ease-out
+
+  #controls label
+    transition opacity 0.2s ease-out
+
+  #slide1:checked ~ #slides article:nth-child(1) .info,
+  #slide2:checked ~ #slides article:nth-child(2) .info,
+  #slide3:checked ~ #slides article:nth-child(3) .info,
+  #slide4:checked ~ #slides article:nth-child(4) .info,
+  #slide5:checked ~ #slides article:nth-child(5) .info
+    opacity 1
+    transition all 1s ease-out 0.6s
+
+  .info, #controls, #slides, #active, #active label, .info h3, .desktop, .tablet, .mobile
+    transition all 0.5s ease-out
+
+@media screen and (min-width: 768px)
+  .row3
+    &__title
+      margin 60px auto 0
+      text-align center
+
+    &__caption
+      margin 2px 0 0 0
+      text-align center
+
+    &__description
+      margin 20px auto 0
+      text-align center
+
+    &__slider
+      margin 35px auto 60px
+      width 417px
+
+  // Slider Styling
+
+  // Control Setup
+  #slide1:checked ~ #controls label:nth-child(2),
+  #slide2:checked ~ #controls label:nth-child(3),
+  #slide3:checked ~ #controls label:nth-child(1)
+    background url('../images/arrow-right.png') no-repeat
+    float right
+    margin 0 -75px 0 0
+    display block
+
+
+  #slide1:checked ~ #controls label:nth-child(3),
+  #slide2:checked ~ #controls label:nth-child(1),
+  #slide3:checked ~ #controls label:nth-child(2)
+    background url('../images/arrow-left.png') no-repeat
+    float left
+    margin 0 0 0 -75px
+    display block

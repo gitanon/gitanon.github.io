@@ -1,0 +1,58 @@
+.banner
+  background url(../images/banner.jpg) secondaryColor2
+  background-size cover
+  &__outer
+    text-align center
+  &__inner
+    padding 50px 0
+
+.text-one
+.text-two
+  background secondaryColor1
+  border 8px solid secondaryColor1
+  color secondaryColor2
+  display inline-block
+  font fontHeavy (16/fontSize)rem/1 fontArray
+  margin 1px 0 0 0
+  vertical-align middle
+
+@media screen and (min-width: 480px)
+  .banner
+    &__inner
+      padding 75px 0
+  .text-one
+  .text-two
+    font fontHeavy (21/fontSize)rem/1 fontArray
+
+@media screen and (min-width: 600px)
+  .banner
+    &__inner
+      padding 100px 0
+  .text-one
+  .text-two
+    font fontHeavy (26/fontSize)rem/1 fontArray
+
+@media screen and (min-width: 768px)
+    .banner
+      &__inner
+        padding 125px 0
+  .text-one
+  .text-two
+    font fontHeavy (31/fontSize)rem/1 fontArray
+
+@media screen and (min-width: 900px)
+  .banner
+    height 441px
+    &__outer
+      height 441px
+      &:before
+        content ''
+        display inline-block
+        height 100%
+        vertical-align middle
+    &__inner
+      display inline-block
+      vertical-align middle
+  .text-one
+  .text-two
+    font fontHeavy (31px/fontSize)rem/1 fontArray

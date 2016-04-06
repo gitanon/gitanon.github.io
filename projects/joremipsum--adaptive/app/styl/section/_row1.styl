@@ -1,0 +1,101 @@
+.row1
+  background secondaryColor2
+  clearfix()
+  &__left
+    width 100%
+  &__right
+    width 100%
+
+  &__icon
+    margin 0 20px 20px 20px
+    float left
+
+  &__right &__icon
+    margin 0 33px 0 34px
+
+  &__title
+    color secondaryColor1
+    font fontBold (24/fontSize)rem/1 fontArray
+    margin 40px 0 0 0
+  &__caption
+    color primaryColor
+    font fontLight (20/fontSize)rem/1 fontArray
+    margin 2px 0 0 0
+    padding 0 10px 0 0
+  &__description
+    color #978489
+    font fontNormal (15/fontSize)rem/22px fontArray
+    padding 0 60px 0 130px
+    margin 20px 0 0 0
+
+  &__btn
+    background primaryColor
+    border-radius 5px
+    color secondaryColor2
+    display inline-block
+    font fontBold (16/fontSize)rem/1 fontArray
+    margin 25px 60px 30px 130px
+    padding 13px 13px 10px
+    text-decoration none
+
+@media screen and (min-width: 768px)
+  .row1
+    &__left
+      border-right 1px solid #e2e2df
+      float left
+      width 49%
+    &__right
+      float right
+      width 49%
+
+    &__icon
+      margin 20px
+      float left
+    &__right &__icon
+      margin 20px
+
+    &__title
+      margin 20px 0 0 0
+    &__caption
+      margin 2px 0 0 0
+    &__description
+      margin 20px 0 0 0
+
+    &__left &__description
+      padding 0 60px 0 130px
+    &__right &__description
+      padding 0 60px 0 103px
+
+    &__left &__btn
+      margin 25px 60px 30px 130px
+    &__right &__btn
+      margin 25px 60px 30px 103px
+
+@media screen and (min-width: 900px)
+  .row1
+    &__icon
+      margin 40px
+      float left
+    &__right &__icon
+      margin 40px
+
+    &__title
+      margin 40px 0 0 0
+    &__caption
+      margin 2px 0 0 0
+    &__description
+      margin 20px 0 0 0
+      padding 0 60px 0
+
+    &__left &__btn
+      margin 25px 0 60px 0
+    &__right &__btn
+      margin 25px 0 60px 0
+
+    &__left
+      border-right 1px solid #e2e2df
+      float left
+      width 49%
+    &__right
+      float right
+      width 49%
