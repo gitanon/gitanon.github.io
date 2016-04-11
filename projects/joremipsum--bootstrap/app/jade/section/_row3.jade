@@ -1,0 +1,22 @@
+div.row3
+  div.wrapper
+    div.row3__title Bulum nulla necante
+    div.row3__caption Cestibulum auctor dapibus neque lobor
+    div.row3__description Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam am dui mi,<br> tincidunt quis, accumsan porttitor, facilisis bi in sem quis dui placerat ornare.
+    div.row3__slider
+      div(id="carousel-example-generic" class="carousel slide" data-ride="carousel")
+        //- Wrapper for slides
+        div(class="carousel-inner" role="listbox")
+          div(class="item active")
+            img(src="images/pc.png" alt="pc")
+          div.item
+            img(src="images/tablet.png" alt="tablet")
+          div.item
+            img(src="images/phone.png" alt="tablet")
+        //- Controls
+        a(class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev")
+          span(class="glyphicon glyphicon-chevron-left" aria-hidden="true")
+          span(class="sr-only") Previous
+        a(class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next")
+          span(class="glyphicon glyphicon-chevron-right" aria-hidden="true")
+          span(class="sr-only") Next

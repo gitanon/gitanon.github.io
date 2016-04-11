@@ -1,0 +1,11 @@
+header.header
+  div.wrapper
+    div.logo
+      div.icon-logo
+      div.logo__site-name #{siteName}
+      div.logo__site-caption #{siteCaption}
+    nav.menu
+      ul.menu__list
+        each val in ['Home', 'About', 'Services', 'Portfolio', 'Contact']
+          li
+            a(href='#')= val

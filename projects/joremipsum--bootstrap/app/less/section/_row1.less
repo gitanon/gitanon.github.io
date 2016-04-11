@@ -1,0 +1,131 @@
+.row1 {
+  background: @secondary2;
+  .make-row();
+  .center-block();
+}
+
+.row1__left,
+.row1__right {
+  .make-xs-column(12);
+}
+
+.row1__left {
+  border-bottom: 1px solid #e2e2df;
+}
+
+.row1__icon {
+  margin: 20px 20px 20px 0;
+  float: left;
+}
+  
+.row1__right .row1__icon {
+  margin: 20px 33px 20px 16px;
+}
+    
+.row1__title {
+  color: @secondary1;
+  font: @font-weight-bold 1.5em/1 @font-family-sans-serif; /* 24px/16px */
+  margin: 20px 0 0 0;
+}
+    
+.row1__caption {
+  color: @primary;
+  font: @font-weight-light 1.25em/1 @font-family-sans-serif; /* 20px/16px */
+  padding: 0 10px 0 0;
+}
+  
+.row1__description {
+  color: #978489;
+  font: @font-weight-normal 0.9375em/1 @font-family-sans-serif; /* 15px/16px */
+  padding: 0 60px 0 110px;
+  margin: 20px 0 0 0;
+}
+
+.row1__btn {
+  background: @primary;
+  border-radius: 5px;
+  color: @secondary2;
+  display: inline-block;
+  font: @font-weight-bold 1em/1 @font-family-sans-serif; /* 16px/16px */
+  margin: 25px 60px 30px 110px;
+  padding: 13px 13px 10px;
+  text-decoration: none;
+}
+
+@media (min-width: @screen-sm-min) {
+  .row1__left {
+    border-right: 1px solid #e2e2df;
+    .make-sm-column(6);
+  }
+    
+  .row1__right {
+    .make-sm-column(6);
+  }
+
+  .row1__icon {
+    margin: 20px;
+    float: left;
+  }
+    
+  .row1__right .row1__icon {
+    margin: 20px;
+  }
+    
+  .row1__title {
+    margin: 20px 0 0 0;
+  }
+    
+  .row1__caption {
+    margin: 2px 0 0 0;
+  }
+    
+  .row1__description {
+    margin: 20px 0 0 0;
+  }
+    
+  .row1__left .row1__description {
+    padding: 0 60px 0 130px;
+  }
+    
+  .row1__right .row1__description {
+    padding: 0 60px 0 103px;
+  }
+    
+  .row1__left .row1__btn {
+    margin: 25px 60px 30px 130px;
+  }
+    
+  .row1__right .row1__btn {
+    margin: 25px 60px 30px 103px;
+  }
+}
+  
+
+@media (min-width: @screen-md-min) {
+  .row1__icon {
+    margin: 40px;
+    float: left;
+  }
+
+  .row1__right .row1__icon {
+    margin: 40px;
+  }
+
+  .row1__title {
+    margin: 40px 0 0 0;
+  }
+
+  .row1__description {
+    margin: 20px 0 0 0;
+    padding: 0 60px 0;
+  }
+
+  .row1__left .row1__btn {
+    margin: 25px 0 60px 0;
+  }
+    
+  .row1__right .row1__btn {
+    margin: 25px 0 60px 0;
+  }
+}
+    

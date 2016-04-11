@@ -1,0 +1,91 @@
+.row3 {
+  background: @secondary2;
+  .make-row();
+  .center-block();
+}
+
+.row3__title {
+  color: @secondary1;
+  font: @font-weight-bold 1.5em/1 @font-family-sans-serif; /* 24px/16px */
+  margin: 30px auto 0;
+  text-align: center;
+}
+  
+.row3__caption {
+  color: @primary;
+  font: @font-weight-light 1.25em/1 @font-family-sans-serif; /* 20px/16px */
+  margin: 2px 0 0 0;
+  text-align: center;
+}  
+
+.row3__description {
+  color: #978489;
+  font: @font-weight-normal 0.9375em/1 @font-family-sans-serif; /* 15px/16px */
+  margin: 20px auto 0;
+  padding: 0 20px;
+  text-align: center;
+}
+  
+.row3__slider {
+  display: block;
+  margin: 35px auto 60px;
+  width: 417px;
+}
+
+.carousel .item {
+  height: 278px;
+  text-align: center;
+}
+
+.carousel .item&:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.carousel .item img {
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.glyphicon-chevron-left:before,
+.glyphicon-chevron-right:before { 
+  content: ""; 
+}
+
+.glyphicon-chevron-left {
+  background: url('../images/arrow-left.png') no-repeat;
+}
+
+.glyphicon-chevron-right {
+  background: url('../images/arrow-right.png') no-repeat;
+}
+
+.carousel-control.left,
+.carousel-control.right  {
+  background-image: none;
+}
+
+@media (min-width: @screen-sm-min) {
+  .row3__title {
+    margin: 60px auto 0;
+    text-align: center;
+  }
+
+  .row3__caption {
+    margin: 2px 0 0 0;
+    text-align: center;
+  }
+    
+  .row3__description {
+    margin: 20px auto 0;
+    text-align: center;
+  }
+
+  .row3__slider {
+    margin: 35px auto 60px;
+    width: 417px;
+  }
+}
