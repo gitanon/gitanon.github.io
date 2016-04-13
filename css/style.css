@@ -1,6 +1,10 @@
 .wrapper {
-  margin: 0 auto;
-  width: 800px;
+  margin: 0 50px;
+}
+
+.maket {
+  float: left;
+  width: 600px;
 }
 
 .maket:after,

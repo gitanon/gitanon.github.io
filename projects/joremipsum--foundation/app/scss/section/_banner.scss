@@ -1,0 +1,53 @@
+.banner {
+  background: url(../images/banner.jpg) $secondaryColor2;
+  background-size: cover;
+  max-width: 100%;
+}
+  
+.banner {
+  &__outer {
+  text-align: center;
+  }
+  &__inner {
+    padding: 50px 0;
+  }
+}
+      
+.text-one,
+.text-two {
+  background: $secondaryColor1;
+  border: 8px solid $secondaryColor1;
+  color: $secondaryColor2;
+  display: inline-block;
+  font: $fontHeavy 2rem/1 $fontArray; /* 32px/16px */
+  margin: 1px 0 0 0;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 40em) {
+  .banner__inner {
+    padding: 75px 0;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .banner {
+    height: 441px;
+
+    &__outer {
+      height: 441px;
+    }
+
+    &__inner {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+      
+  .banner__outer:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }  
+}

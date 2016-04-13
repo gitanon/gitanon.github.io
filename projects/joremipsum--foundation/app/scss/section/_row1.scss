@@ -1,0 +1,134 @@
+.row1 {
+  background: $secondaryColor2;
+
+  &__left,
+  &__right {
+    @include grid-column(12);
+  }
+
+  &__left {
+    border-bottom: 1px solid #e2e2df;
+  }
+
+  &__icon {
+    margin: 20px 20px 20px 0;
+    float: left;
+  }
+    
+  &__right .row1__icon {
+    margin: 20px 33px 20px 16px;
+  }
+      
+  &__title {
+    color: $secondaryColor1;
+    font: $fontBold 1.5rem/1 $fontArray; /* 24px/16px */
+    margin: 20px 0 0 0;
+  }
+      
+  &__caption {
+    color: $primaryColor;
+    font: $fontLight 1.25rem/1 $fontArray; /* 20px/16px */
+    padding: 0 10px 0 0;
+  }
+    
+  &__description {
+    color: #978489;
+    font: $fontNormal 0.9375rem/1 $fontArray; /* 15px/16px */
+    padding: 0 60px 0 110px;
+    margin: 20px 0 0 0;
+  }
+
+  &__btn {
+    background: $primaryColor;
+    border-radius: 5px;
+    color: $secondaryColor2;
+    display: inline-block;
+    font: $fontBold 1rem/1 $fontArray; /* 16px/16px */
+    margin: 25px 60px 30px 110px;
+    padding: 13px 13px 10px;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .row1 {
+    &__left {
+      border-bottom: none;
+      border-right: 1px solid #e2e2df;
+      @include grid-column(6);
+    }
+      
+    &__right {
+      @include grid-column(6);
+    }
+
+    &__icon {
+      margin: 20px;
+      float: left;
+    }
+      
+    &__right .row1__icon {
+      margin: 20px;
+    }
+      
+    &__title {
+      margin: 20px 0 0 0;
+    }
+      
+    &__caption {
+      margin: 2px 0 0 0;
+    }
+      
+    &__description {
+      margin: 20px 0 0 0;
+    }
+      
+    &__left .row1__description {
+      padding: 0 60px 0 130px;
+    }
+      
+    &__right .row1__description {
+      padding: 0 60px 0 103px;
+    }
+      
+    &__left .row1__btn {
+      margin: 25px 60px 30px 130px;
+    }
+      
+    &__right .row1__btn {
+      margin: 25px 60px 30px 103px;
+    }
+  }
+}
+  
+
+@media screen and (min-width: 64em) {
+  .row1 {
+    &__icon {
+      margin: 40px;
+      float: left;
+    }
+
+    &__right .row1__icon {
+      margin: 40px;
+    }
+
+    &__title {
+      margin: 40px 0 0 0;
+    }
+
+    &__description {
+      margin: 20px 0 0 0;
+      padding: 0 60px 0;
+    }
+
+    &__left .row1__btn {
+      margin: 25px 0 60px 0;
+    }
+      
+    &__right .row1__btn {
+      margin: 25px 0 60px 0;
+    }
+  }
+}
+    

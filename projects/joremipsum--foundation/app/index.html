@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- build:css css/main.min.css-->
+    <link rel="stylesheet" href="css/sprite.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="logo">
+          <div class="icon-logo"></div>
+          <div class="logo__site-name">Site name</div>
+          <div class="logo__site-caption">caption goes here</div>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="wrapper">
+        <div class="banner__outer">
+          <div class="banner__inner"><span class="text-one">Alivuam tinc</span><br><span class="text-two">Nunc dignissim risus id metus</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="wrapper">
+        <div class="main__title">Morbi interdum mollis sapien edac risus</div>
+        <div class="main__description">Integer vitae libero ac risus egestas placerat lectus arcu pulvinar risus <br> vitae facilisis libero dolor a purus</div>
+        <div class="main__outer">
+          <div class="main__inner"><a href="#" class="main__btn">Lorem Ipsum</a><a href="#" class="main__btn">Vivamus sin</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="row1">
+      <div class="wrapper">
+        <div class="row1__left">
+          <div class="row1__icon icon-rocket"></div>
+          <div class="row1__title">Jorem ipsum</div>
+          <div class="row1__caption">Cestibulum auctor dapibus neque</div>
+          <div class="row1__description">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam am dui mi, tincidunt quis, accumsan porttitor, facilisis</div><a href="#" class="row1__btn">More...</a>
+        </div>
+        <div class="row1__right">
+          <div class="row1__icon icon-micro"></div>
+          <div class="row1__title">Cras ornare tris</div>
+          <div class="row1__caption">Integer vitae libero ac risus egestas</div>
+          <div class="row1__description">Laoreet in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam am dui mi, tincidunt quis, accumsan porttitor, facilisis</div><a href="#" class="row1__btn">More...</a>
+        </div>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="wrapper">
+        <div class="row2__icon"><img src="images/tablet.png" class="row2__icon--tablet"><img src="images/phone.png" class="row2__icon--phone"></div>
+        <div class="row2__title">Vivamus vestibulum nulla nec ante</div>
+        <div class="row2__caption">Cestibulum auctor dapibus neque lobortis lorem at ipsum semper sagittis.</div>
+        <div class="row2__description">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam am dui mi, tincidunt quis, accumsan porttitor, facilisis bi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat. ed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem.</div><a href="#" class="row2__btn">More...</a>
+      </div>
+    </div>
+    <div class="row3">
+      <div class="wrapper">
+        <div class="row3__title">Bulum nulla necante</div>
+        <div class="row3__caption">Cestibulum auctor dapibus neque lobor</div>
+        <div class="row3__description">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam am dui mi,<br> tincidunt quis, accumsan porttitor, facilisis bi in sem quis dui placerat ornare.</div>
+        <div class="row3__slider">
+          <div role="region" aria-label="devices" data-orbit data-use-m-u-i="false" class="orbit">
+            <ul class="orbit-container">
+              <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span></button>
+              <button class="orbit-next"><span class="show-for-sr">Next Slide</span></button>
+              <li class="is-active orbit-slide"><img src="images/pc.png" alt="pc" class="orbit-image"></li>
+              <li class="orbit-slide"><img src="images/tablet.png" alt="tablet" class="orbit-image"></li>
+              <li class="orbit-slide"><img src="images/phone.png" alt="phone" class="orbit-image"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="wrapper">Copyright(c) Site name. Designed by: <a href="www.alltemplateneeds.com"> www.alltemplateneeds.com</a> / Images from: <a href="www.wallpaperswide.com">www.wallpaperswide.com</a>, <a href="www.photorack.net">www.photorack.net</a></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- build:js js/main.min.js-->
+    <script src="js/foundation.core.js"></script>
+    <script src="js/foundation.util.mediaQuery.js"></script>
+    <script src="js/foundation.util.keyboard.js"></script>
+    <script src="js/foundation.util.motion.js"></script>
+    <script src="js/foundation.util.timerAndImageLoader.js"></script>
+    <script src="js/foundation.util.touch.js"></script>
+    <script src="js/foundation.orbit.js"></script>
+    <!-- endbuild-->
+    <script>$(document).foundation();</script>
+  </body>
+</html>

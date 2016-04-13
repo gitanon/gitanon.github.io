@@ -1,0 +1,123 @@
+.row3 {
+  background: $secondaryColor2;
+
+  &__title {
+    color: $secondaryColor1;
+    font: $fontBold 1.5rem/1 $fontArray; /* 24px/16px */
+    margin: 30px auto 0;
+    text-align: center;
+  }
+    
+  &__caption {
+    color: $primaryColor;
+    font: $fontLight 1.25rem/1 $fontArray; /* 20px/16px */
+    margin: 2px 0 0 0;
+    text-align: center;
+  }  
+
+  &__description {
+    color: #978489;
+    font: $fontNormal 0.9375rem/1 $fontArray; /* 15px/16px */
+    margin: 20px auto 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+    
+  &__slider {
+    display: block;
+    margin: 35px auto 60px;
+    width: 417px;
+  }
+}
+
+.orbit {
+  position: relative;
+
+  &-container {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    list-style: none;
+  }
+
+  &-slide {
+    height: 278px;
+    text-align: center;
+  }
+
+  &-slide:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  &-image {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  &-previous,
+  &-next {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10;
+    padding: 1rem;
+    color: #fefefe;
+  }
+
+  &-previous {
+    background: url('../images/arrow-left.png') no-repeat;
+    left: 0;
+  }
+
+  &-next {
+    background: url('../images/arrow-right.png') no-repeat;
+    left: auto;
+    right: 0;
+  }
+
+  &-previous:hover,
+  &-next:hover,
+  &-previous:active,
+  &-next:active,
+  &-previous:focus,
+  &-next:focus {
+    //background-color: rgba(10, 10, 10, 0.5);
+  }
+}
+
+.show-for-sr {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+@media screen and (min-width: 40em) {
+  .row3 {
+    &__title {
+      margin: 60px auto 0;
+      text-align: center;
+    }
+
+    &__caption {
+      margin: 2px 0 0 0;
+      text-align: center;
+    }
+      
+    &__description {
+      margin: 20px auto 0;
+      text-align: center;
+    }
+
+    &__slider {
+      margin: 35px auto 60px;
+      width: 417px;
+    }
+  }
+}

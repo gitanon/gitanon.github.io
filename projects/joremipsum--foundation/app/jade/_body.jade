@@ -1,0 +1,19 @@
+body
+  include section/_header.jade
+  include section/_banner.jade
+  include section/_main.jade
+  include section/_row1.jade
+  include section/_row2.jade
+  include section/_row3.jade
+  include section/_footer.jade
+  script(src="https://code.jquery.com/jquery-1.9.1.min.js")
+  // build:js js/main.min.js
+  script(src="js/foundation.core.js")
+  script(src="js/foundation.util.mediaQuery.js")
+  script(src="js/foundation.util.keyboard.js")
+  script(src="js/foundation.util.motion.js")
+  script(src="js/foundation.util.timerAndImageLoader.js")
+  script(src="js/foundation.util.touch.js")
+  script(src="js/foundation.orbit.js")
+  // endbuild
+  script $(document).foundation();
